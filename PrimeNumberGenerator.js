@@ -20,6 +20,13 @@ class PrimeNumberGenerator {
 	generate(startingValue, endingValue) {
 		let primesArray = [];
 
+		// if given a backwards (inverse) range (eg. 10, 1)
+		if (startingValue >= endingValue) {
+			let temp = startingValue;
+			startingValue = endingValue;
+			endingValue = temp;
+		}
+
 		for (let i = startingValue; i <= endingValue; i++) {
 			if (this.isPrime(i)) primesArray.push(i);
 		}
