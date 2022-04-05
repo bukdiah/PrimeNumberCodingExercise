@@ -19,6 +19,10 @@ describe('isPrime', () => {
 	test('should return false when argument is 0', () => {
 		expect(primeNumberGeneratorObj.isPrime(0)).toBe(false);
 	});
+
+	test('should return false when argument is an even number that is NOT 2', () => {
+		expect(primeNumberGeneratorObj.isPrime(6)).toBe(false);
+	});
 });
 
 describe('generate', () => {});
