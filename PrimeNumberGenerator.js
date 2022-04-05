@@ -18,7 +18,13 @@ class PrimeNumberGenerator {
 	}
 
 	generate(startingValue, endingValue) {
-		return;
+		let primesArray = [];
+
+		for (let i = startingValue; i <= endingValue; i++) {
+			if (this.isPrime(i)) primesArray.push(i);
+		}
+
+		return primesArray;
 	}
 }
 
