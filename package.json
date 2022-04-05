@@ -1,0 +1,23 @@
+{
+  "name": "PrimeNumberCodingExercise",
+  "version": "1.0.0",
+  "description": "This program was written using version 14.5.1 of NodeJS and uses the Jest JavaScript Testing Framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bukdiah/PrimeNumberCodingExercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bukdiah/PrimeNumberCodingExercise/issues"
+  },
+  "homepage": "https://github.com/bukdiah/PrimeNumberCodingExercise#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
