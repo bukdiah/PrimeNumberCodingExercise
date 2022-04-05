@@ -27,6 +27,10 @@ describe('isPrime', () => {
 	test('should return true when argument is 7', () => {
 		expect(primeNumberGeneratorObj.isPrime(7)).toBe(true);
 	});
+
+	test('should return false when argument is 15', () => {
+		expect(primeNumberGeneratorObj.isPrime(15)).toBe(false);
+	});
 });
 
 describe('generate', () => {});
