@@ -6,8 +6,8 @@ class PrimeNumberGenerator {
 
 	isPrime(num) {
 		if (num <= 1) return false;
-		if (num === 2) return true;
-		if (num % 2 === 0) return false;
+		else if (num === 2) return true;
+		else if (num % 2 === 0) return false;
 
 		// check if number is odd and composite
 		for (let i = 3; i <= Math.sqrt(num); i += 2) {
