@@ -33,4 +33,9 @@ describe('isPrime', () => {
 	});
 });
 
-describe('generate', () => {});
+describe('generate', () => {
+	test('should return [2,3,5,7] for generate(1,10)', () => {
+		const desiredResult = [2, 3, 5, 7];
+		expect(primeNumberGeneratorObj.generate(1, 10)).toEqual(desiredResult);
+	});
+});
