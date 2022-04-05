@@ -38,4 +38,9 @@ describe('generate', () => {
 		const desiredResult = [2, 3, 5, 7];
 		expect(primeNumberGeneratorObj.generate(1, 10)).toEqual(desiredResult);
 	});
+
+	test('should return [2,3,5,7] for generate(10,1)', () => {
+		const desiredResult = [2, 3, 5, 7];
+		expect(primeNumberGeneratorObj.generate(10, 1)).toEqual(desiredResult);
+	});
 });
