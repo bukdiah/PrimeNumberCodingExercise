@@ -5,7 +5,7 @@ class PrimeNumberGenerator {
 	constructor() {}
 
 	isPrime(num) {
-		return;
+		return false;
 	}
 
 	generate(startingValue, endingValue) {
