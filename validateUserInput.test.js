@@ -16,3 +16,7 @@ test('should return false when given a number with a decimal point like 2.0', ()
 test('should return false when given a string with letters and numbers like 123abc', () => {
 	expect(validateUserInput('123abc')).toBe(false);
 });
+
+test('should return false when given a string with only letters like hello', () => {
+	expect(validateUserInput('hello')).toBe(false);
+});
