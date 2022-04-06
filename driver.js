@@ -1,4 +1,5 @@
 const PrimeNumberGenerator = require('./PrimeNumberGenerator');
+const validateUserInput = require('./validateUserInput');
 
 let primeNumberGeneratorObj = new PrimeNumberGenerator();
 
@@ -10,10 +11,20 @@ if (commandLineArgs.length < 4) {
 	);
 	process.exitCode = 0;
 } else {
-	let startingValue = parseInt(commandLineArgs[2]);
-	let endingValue = parseInt(commandLineArgs[3]);
+	let startingValue = commandLineArgs[2];
+	let endingValue = commandLineArgs[3];
 
-	console.log(
-		primeNumberGeneratorObj.generate(startingValue, endingValue).join(', ')
-	);
+	// if startingValue or endingValue arguments are invalid
+	if (!validateUserInput(startingValue) || !validateUserInput(endingValue)) {
+		console.log(
+			'One or both of your arguments are invalid.\nThe program only accepts natural numbers which includes positive integers, but not zero, fractions, decimals, and negative numbers.'
+		);
+		process.exitCode = 0;
+	} else {
+		console.log(
+			primeNumberGeneratorObj
+				.generate(parseInt(startingValue), parseInt(endingValue))
+				.join(', ')
+		);
+	}
 }
