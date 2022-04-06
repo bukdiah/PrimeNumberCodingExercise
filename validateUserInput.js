@@ -1,4 +1,5 @@
 function validateUserInput(input) {
+	if (input.includes('.')) return false;
 	const num = Number(input); // convert string to number..empty string returns 0
 
 	// if num is a positive integer
