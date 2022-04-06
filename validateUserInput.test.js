@@ -4,3 +4,7 @@ const validateUserInput = require('./validateUserInput');
 test('should return false when given an empty string', () => {
 	expect(validateUserInput('')).toBe(false);
 });
+
+test('should return true when given a positive integer like 3', () => {
+	expect(validateUserInput('3')).toBe(true);
+});
