@@ -29,3 +29,5 @@ number divisors: 1 and itself. The first twenty-six prime numbers are: 2, 3, 5, 
 Run `npm test` to execute ALL unit tests (eg. files with .test. in their name)
 
 Run `npx jest FILE_NAME` eg. `npx jest PrimeNumberGenerator.test.js` to execute unit tests for the specified file
+
+Run `npx jest --coverage FILE_NAME` eg. `npx jest --coverage PrimeNumberGenerator.test.js` to execute unit tests and display code coverage for specified file
