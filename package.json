@@ -4,7 +4,7 @@
   "description": "This program was written using version 14.5.1 of NodeJS and uses the Jest JavaScript Testing Framework.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
